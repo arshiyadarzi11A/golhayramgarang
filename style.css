@@ -1,0 +1,301 @@
+/* تنظیمات کلی */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Vazirmatn', sans-serif;
+    background-color: #fafafa;
+    color: #222;
+    line-height: 1.8;
+}
+
+/* هدر */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px;
+    font-size: 14px;
+    color: #555;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 18px;
+    color: #111;
+}
+
+/* بخش هیرو */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+.hero p {
+    color: #666;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #222;
+    color: #fff;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 40px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 12px;
+    filter: grayscale(100%);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* بخش‌های متنی */
+.text-section, .archive-section, .photo-text-section, .blog-section {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.text-section h2, .archive-section h2, .blog-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.text-section p, .archive-section p {
+    color: #555;
+    font-size: 15px;
+    text-align: justify;
+}
+
+/* گرید ۶ تایی */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.feature-item h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    font-size: 13px;
+    color: #777;
+    text-align: justify;
+}
+
+/* بخش آرشیو با لوگو */
+.archive-grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.archive-text ul {
+    list-style-type: disc;
+    text-align: right;
+    color: #555;
+    font-size: 14px;
+}
+
+.archive-text li {
+    margin-bottom: 10px;
+}
+
+.archive-image img {
+    width: 300px;
+    border-radius: 15px;
+}
+
+/* بخش عکس و متن */
+.photo-text-section {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    text-align: right;
+}
+
+.photo-text-section .photo {
+    flex: 1;
+}
+
+.photo-text-section .photo img {
+    width: 100%;
+    border-radius: 12px;
+    filter: sepia(50%);
+}
+
+.photo-text-section .text {
+    flex: 1;
+    font-size: 14px;
+    color: #555;
+    text-align: justify;
+}
+
+/* بخش نقل قول (پس زمینه مشکی) */
+.quote-section {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.quote-section blockquote {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 2;
+    font-weight: 300;
+}
+
+.quote-section .author {
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.quote-section .role {
+    font-size: 13px;
+    color: #aaa;
+}
+
+/* بخش بلاگ */
+.blog-section {
+    border-top: 1px solid #ddd;
+    padding-top: 40px;
+    text-align: right;
+}
+
+.blog-section h2 {
+    text-align: left;
+    font-family: serif;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.blog-post {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+.post-info h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.post-info p {
+    font-size: 13px;
+    color: #888;
+}
+
+/* بخش عضویت */
+.subscribe-section {
+    background-color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+    margin: 40px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+}
+
+.subscribe-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.subscribe-section p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* فوتر */
+footer {
+    border-top: 1px solid #eee;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-col h3, .footer-col h4 {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    text-decoration: none;
+    color: #666;
+    font-size: 13px;
+}
+
+.footer-col ul li a:hover {
+    color: #000;
+}
+
+.brand p {
+    font-size: 12px;
+    color: #999;
+    margin-top: 20px;
+}
+
+/* واکنش‌گرایی (ریسپانسیو برای موبایل) */
+@media (max-width: 768px) {
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    .archive-grid, .photo-text-section {
+        flex-direction: column;
+    }
+    .hero h1 {
+        font-size: 24px;
+    }
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
